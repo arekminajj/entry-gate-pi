@@ -1,6 +1,6 @@
 # entry-gate-pi
 
-## intalation
+## Intalation
 
 ```
 pip3 install pip install RPi.GPIO
