@@ -1,14 +1,16 @@
 import RPi.GPIO as GPIO
 import time
 
-GPIO.setmode(GPIO.BCM) # GPIO Numbers instead of board numbers
-RELAIS_1_GPIO = 17
-GPIO.setup(RELAIS_1_GPIO, GPIO.OUT) # GPIO Assign mode
+channel = 21
 
-#propably time needs to be better matched
-def open_close():
-    GPIO.output(RELAIS_1_GPIO, GPIO.HIGH) # on
-    time.sleep(0.3)
-    GPIO.output(RELAIS_1_GPIO, GPIO.LOW) # out
-    
+#GPIO SETUP
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(channel, GPIO.OUT)
 
+def openclose(pin):
+        GPIO.output(pin, GPIO.HIGH)
+        time.sleep(0.3)
+        GPIO.output(pin, GPIO.LOW)
+
+openclose(channel)
+GPIO.cleanup()
