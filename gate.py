@@ -11,6 +11,6 @@ def openclose(pin):
         GPIO.output(pin, GPIO.HIGH)
         time.sleep(0.3)
         GPIO.output(pin, GPIO.LOW)
+        GPIO.cleanup()
 
-openclose(channel)
-GPIO.cleanup()
+openclose(21)
