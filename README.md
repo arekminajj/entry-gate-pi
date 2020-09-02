@@ -1,5 +1,7 @@
 # entry-gate-pi
 
+Raspberry Pi python client for system to controll automatic entry gate remotely. 
+
 ## Intalation
 
 ```
