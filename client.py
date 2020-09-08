@@ -2,6 +2,7 @@ import requests
 import json
 import time
 import gate
+time.sleep(45)
 
 url = 'https://stormy-badlands-80104.herokuapp.com/api/status'
 
