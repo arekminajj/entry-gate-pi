@@ -2,6 +2,7 @@ import requests
 import json
 import time
 import gate
+time.sleep(45)
 
 url = 'https://stormy-badlands-80104.herokuapp.com/api/status'
 
@@ -44,4 +45,3 @@ while(True):
         #NEED THIS SO WHEN SMTH GOES WRONG, DOESNT NEED TO REBOOT.
         print("Something went wrong, retrying...")
         continue
- 
