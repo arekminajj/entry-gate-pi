@@ -12,7 +12,7 @@ def updateApiJson(is_closed, should_be_closed):
     print(postResponse)
     print(json.dumps(statusDict))
 
-#STILL GOT IT HERE CUZ I MAY USE IT IN THE FUTURE.
+#STILL GOT IT HERE CUZ I MAY USE IT IN THE FUTURE FOR MAGNECTIC SENSOR SUPPORT.
 def updateLocalJson(is_closed, should_be_closed):
     statusDict = {'IsClosed': is_closed, 'ShouldBeClosed': should_be_closed}
     with open('status.json', 'w') as json_file:
